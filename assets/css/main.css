@@ -261,6 +261,13 @@ article.post h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
 }
+article.post h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  /*padding-bottom: 0.5rem;*/
+  font-weight: bold;
+}
 article.post p {
   font-size: 1em;
   margin-bottom: 1.5em;
@@ -287,7 +294,7 @@ article.post img {
 article.post blockquote {
   /*margin: 1.75em 0 1.75em -2.2em;*/
   margin: 1.75em 0 1.75em 0em;
-  background-color: #e8effc;
+  background-color: #f1f5fd;
   padding: 0 0 0 1.75em;
   border-left: #4a4a4a 0.4em solid;
   font-style: italic;

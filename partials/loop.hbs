@@ -2,11 +2,18 @@
 <div class='container'>
   {{#foreach posts}}
 
-  <article>
-    <header>
-      <h2>{{{title}}}</h2>
-    </header>
-  </article>
+  <div class='articles'>
+    <article>
+      <header>
+        <h2>
+          <a href='{{url}}'>{{{title}}}</a>
+        </h2>
+      </header>
+      <div class='meta'>
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+      </div>
+    </article>
+  </div>
 
   {{/foreach}}
 

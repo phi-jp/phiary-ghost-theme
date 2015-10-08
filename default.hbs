@@ -24,24 +24,31 @@
     <header id='header'>
       <div class='container'>
         <div class='row'>
-          <h1>
+          <h1 class='col'>
             <a href='#'>{{meta_title}}</a>
           </h1>
-          <p>{{meta_description}}</p>
+          <p class='col'>{{meta_description}}</p>
         </div>
       </div>
     </header>
 
-    <div class='container'>
-      <div class='row'>
-        <div class='col l4'>aa</div>
-        <div class='col l4'>bb</div>
-        <div class='col l4'>cc</div>
-      </div>
-    </div>
-
     <div class='main'>
       {{{body}}}
     </div>
+
+    <footer id='footer'>
+      <div class='container'>
+        <div class='row'>
+          <ul class='col s6'>
+            <li>About</li>
+            <li>Tags</li>
+            <li>Feed</li>
+          </ul>
+          <div class='col s6'>
+            copy ...
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

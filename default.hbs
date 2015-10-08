@@ -6,7 +6,7 @@
     <meta charset='utf-8' />
     
     {{! -------- }}
-    <title>{{meta_title}}</title>
+    <title>{{meta_title}} | {{@blog.title}}</title>
     <meta name='description' content='{{meta_description}}' />
 
     {{! -------- }}
@@ -25,9 +25,9 @@
       <div class='container'>
         <div class='row'>
           <h1 class='col'>
-            <a href='#'>{{meta_title}}</a>
+            <a href='{{@blog.url}}'>{{@blog.title}}</a>
           </h1>
-          <p class='col'>{{meta_description}}</p>
+          <p class='col'>{{@blog.description}}</p>
         </div>
       </div>
     </header>

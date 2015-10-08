@@ -1,0 +1,20 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{#post}}
+
+<main id='content' class='content' role='main'>
+  <div class='container'>
+    <article class='{{post_class}}'>
+      <header>
+        <h2 class='title'>{{title}}</h2>
+      </header>
+      <section>
+        {{content}}
+      </section>
+    </article>
+  </div>
+</main>
+
+
+{{/post}}

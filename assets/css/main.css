@@ -247,3 +247,58 @@ a:focus {
   font-size: 0.75em;
   color: #787878;
 }
+article.post h2.title {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: none;
+  font-weight: bold;
+}
+article.post h2 {
+  font-size: 1.4rem;
+  border-bottom: dotted 0.075em #545454;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+article.post p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.4rem;
+}
+article.post ol,
+article.post ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+article.post ol li,
+article.post ul li {
+  margin: 0.4em 0;
+}
+article.post ul {
+  list-style-type: disc;
+}
+article.post ol {
+  list-style-type: decimal;
+}
+article.post img {
+  width: 100%;
+}
+article.post blockquote {
+  /*margin: 1.75em 0 1.75em -2.2em;*/
+  margin: 1.75em 0 1.75em 0em;
+  background-color: #e8effc;
+  padding: 0 0 0 1.75em;
+  border-left: #4a4a4a 0.4em solid;
+  font-style: italic;
+}
+article.post pre {
+  font-size: 0.75em;
+  margin-bottom: 1.5em;
+  overflow: auto;
+}
+article.post pre code {
+  padding: 10px;
+  display: block;
+  background-color: #e6e6e6;
+}

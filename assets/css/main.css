@@ -1,3 +1,73 @@
-h3 {
-  font-size: 500px;
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+.small {
+  font-size: 0.8rem;
+}
+.medium {
+  font-size: 1rem;
+}
+.large {
+  font-size: 2rem;
+}
+.pad-s {
+  padding: 1rem;
+}
+.pad-m {
+  padding: 2rem;
+}
+.pad-l {
+  padding: 4rem;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  clear: both;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #555;
+  outline: 0;
+  transition: color 0.2s ease-in;
+}
+a:visited {
+  color: #333;
+}
+a:hover,
+a:focus {
+  color: #1483CD;
+}
+#header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+#header .container h1 {
+  float: left;
+  font-size: 2rem;
+}
+#header .container p {
+  float: left;
+  margin-top: 0.3rem;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  line-height: 2rem;
+  border-left: solid 1px #545454;
+  font-size: 0.75rem;
 }

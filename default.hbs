@@ -14,13 +14,25 @@
     <link rel='shortcut icon' href='{{asset "favicon.ico"}}'>
 
     {{! -------- }}
+    <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
 
     {{! -------- }}
     {{ghost_head}}
   </head>
   <body>
-    {{navigation}}
-    <h3>hoge</h3>
+    <header id='header'>
+      <div class='container'>
+        <h1>
+          <a href='#'>{{meta_title}}</a>
+        </h1>
+        <p>{{meta_description}}</p>
+        <div class='clearfix'></div>
+      </div>
+    </header>
+
+    <div class='main'>
+      {{{body}}}
+    </div>
   </body>
 </html>

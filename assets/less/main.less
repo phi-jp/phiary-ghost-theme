@@ -1,4 +1,68 @@
 
-h3 {
-  font-size: 500px;
+@import 'part/variables';
+@import 'high/utils';
+
+
+@plain-white: #FFF;
+@basic-black: #333;
+@light-black: #555;
+@basic-gray: #777;
+@light-gray: #DFDFDF;
+@phiary: #1483CD;
+
+@body-background: @plain-white;
+
+@body-text: @basic-black;
+
+@active-link: @light-black;
+@active-link-alt: @phiary;
+@hover-link: @phiary;
+@visited-link: @basic-black;
+@border-color: @light-black;
+
+// Basic
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: @active-link;
+  outline: 0;
+  transition: color  0.2s ease-in;
+}
+
+a {
+  &:visited {
+    color: @visited-link;
+  }
+
+  &:hover, &:focus {
+    color: @hover-link;
+  }
+}
+
+
+#header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  .container {
+    h1 {
+      float: left;
+      font-size: 2rem;
+    }
+    p {
+      float: left;
+      margin-top: 0.3rem;
+      margin-left: 1.5rem;
+      padding-left: 1.5rem;
+      line-height: 2rem;
+      border-left: solid 1px hsl(0, 0%, 33%);
+      font-size: 0.75rem;
+    }
+  }
 }

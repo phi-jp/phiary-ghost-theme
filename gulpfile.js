@@ -9,3 +9,9 @@ gulp.task('less', function() {
     .pipe(gulp.dest('assets/css/'))
     ;
 });
+
+gulp.task('watch', function() {
+  gulp.watch(['assets/less/*', 'assets/less/**/*'], ['less']);
+});
+
+gulp.task('default', 'watch');

@@ -237,8 +237,8 @@ a:focus {
   padding: 0.65rem 0 0;
 }
 .articles {
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 .articles h2 {
   margin-bottom: 0.5rem;
@@ -246,11 +246,32 @@ a:focus {
 .articles .meta {
   font-size: 0.75em;
   color: #787878;
+  line-height: 1.5rem;
+}
+.articles .meta a {
+  color: #00c3e6;
+}
+.articles .meta .author-thumb {
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+}
+.articles .meta .post-date {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: #d4dadd 1px solid;
+}
+article.post {
+  font-size: 0.9rem;
+  color: #333333;
 }
 article.post h2.title {
   font-size: 1.7rem;
+  line-height: 2rem;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   border-bottom: none;
   font-weight: bold;
 }
@@ -262,7 +283,7 @@ article.post h2 {
   padding-bottom: 0.5rem;
 }
 article.post h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   /*padding-bottom: 0.5rem;*/
@@ -271,7 +292,11 @@ article.post h3 {
 article.post p {
   font-size: 1em;
   margin-bottom: 1.5em;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
+}
+article.post a {
+  color: #00c3e6;
+  text-decoration: underline;
 }
 article.post ol,
 article.post ul {
@@ -280,7 +305,7 @@ article.post ul {
 }
 article.post ol li,
 article.post ul li {
-  margin: 0.7em 0;
+  margin: 0.6em 0;
 }
 article.post ul {
   list-style-type: disc;
@@ -289,7 +314,7 @@ article.post ol {
   list-style-type: decimal;
 }
 article.post img {
-  width: 100%;
+  max-width: 100%;
 }
 article.post blockquote {
   /*margin: 1.75em 0 1.75em -2.2em;*/
@@ -300,12 +325,12 @@ article.post blockquote {
   font-style: italic;
 }
 article.post pre {
-  font-size: 0.75em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   overflow: auto;
+  box-shadow: 0px 0px 2px 0px rgba(102, 102, 102, 0.5);
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.85rem;
 }
 article.post pre code {
   padding: 10px;
-  display: block;
-  background-color: #e6e6e6;
 }

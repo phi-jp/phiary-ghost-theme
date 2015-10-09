@@ -76,8 +76,8 @@ a {
 }
 
 .articles {
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 
   h2 {
     margin-bottom: 0.5rem;
@@ -85,14 +85,36 @@ a {
   .meta {
     font-size: 0.75em;
     color: hsl(0, 0%, 47%);
+    line-height: 1.5rem;
+
+    a {
+      color: hsl(189, 100%, 45%);
+    }
+
+    .author-thumb {
+      width: 24px;
+      height: 24px;
+      float: left;
+      margin-right: 0.5rem;
+      border-radius: 100%;
+    }
+    .post-date {
+      margin-left: 0.5rem;
+      padding-left: 0.5rem;
+      border-left: hsl(200, 12%, 85%) 1px solid;
+    }
   }
 }
 
 article.post {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 20%);
+
   h2.title {
     font-size: 1.7rem;
+    line-height: 2rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     border-bottom: none;
     font-weight: bold;
   }
@@ -104,7 +126,7 @@ article.post {
     padding-bottom: 0.5rem;
   }
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     /*padding-bottom: 0.5rem;*/
@@ -113,14 +135,19 @@ article.post {
   p {
     font-size: 1em;
     margin-bottom: 1.5em;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  a {
+    color: hsl(189, 100%, 45%);
+    text-decoration: underline;
   }
 
   ol, ul {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
     li {
-      margin: 0.7em 0;
+      margin: 0.6em 0;
     }
   }
 
@@ -133,7 +160,7 @@ article.post {
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
   }
 
   blockquote {
@@ -146,14 +173,14 @@ article.post {
   }
 
   pre {
-    font-size: 0.75em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     overflow: auto;
+    box-shadow: 0px 0px 2px 0px hsla(0, 0%, 40%, 0.5);
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-size: 0.85rem;
 
     code {
       padding: 10px;
-      display: block;
-      background-color: hsl(0, 0%, 90%)
     }
   }
 }

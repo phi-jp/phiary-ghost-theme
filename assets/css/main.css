@@ -333,6 +333,23 @@ article.post header .meta .post-date {
   padding-left: 0.5rem;
   border-left: #d4dadd 1px solid;
 }
+article.post footer .share {
+  line-height: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+article.post footer .share .btn {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  box-shadow: 0px 0px 2px #888;
+  border-radius: 100%;
+  margin-right: 0.25rem;
+  text-decoration: none;
+}
 article.post h2 {
   font-size: 1.4rem;
   border-bottom: dotted 0.075em #545454;

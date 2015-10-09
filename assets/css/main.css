@@ -267,13 +267,36 @@ article.post {
   font-size: 0.9rem;
   color: #333333;
 }
-article.post h2.title {
-  font-size: 1.7rem;
-  line-height: 2rem;
+article.post header {
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+article.post header h2 {
+  margin-bottom: 0rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
   border-bottom: none;
   font-weight: bold;
+}
+article.post header .meta {
+  font-size: 0.75em;
+  color: #787878;
+  line-height: 1.5rem;
+}
+article.post header .meta a {
+  color: #00c3e6;
+}
+article.post header .meta .author-thumb {
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+}
+article.post header .meta .post-date {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: #d4dadd 1px solid;
 }
 article.post h2 {
   font-size: 1.4rem;

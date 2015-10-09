@@ -23,10 +23,11 @@
 
       <footer>
         <div class='share'>
-          <a target='_blank' href='http://twitter.com/phi_jp' class='btn'><i class="fa fa-twitter"></i></a>
-          <a target='_blank' href='facebook' class='btn'><i class="fa fa-facebook"></i></a>
-          <a target='_blank' href='' class='btn'>B!</a>
-          <a target='_blank' href='facebook' class='btn'><i class="fa fa-get-pocket"></i></a>
+          <a target='_blank' href='http://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}&hashtags=phiary&via=phi_jp' class='btn'><i class="fa fa-twitter"></i></a>
+          <a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}' class='btn'><i class="fa fa-facebook"></i></a>
+          <a target='_blank' href='http://b.hatena.ne.jp/entry/{{url absolute="true"}}' class='btn'>B!</a>
+          <a target='_blank' href='https://getpocket.com/edit?url={{url absolute="true"}}' class='btn'><i class="fa fa-get-pocket"></i></a>
+          <a target='_blank' href='https://plus.google.com/share?url={{url absolute="true"}}' class='btn'><i class="fa fa-google-plus"></i></a>
         </div>
       </footer>
     </article>
@@ -36,15 +37,15 @@
 <aside class='read-next'>
   <div class='container'>
     <div class='row'>
-      <div class='col m5 next'>
+      <div class='col s5 next'>
         {{#next_post}}
         <h2>
           ←<a href='{{url}}'>{{title}}</a>
         </h2>
         {{/next_post}}
       </div>
-      <div class='col m2'>　</div>
-      <div class='col m5 prev'>
+      <div class='col s2'>　</div>
+      <div class='col s5 prev'>
         {{#prev_post}}
         <h2>
           <a href='{{url}}'>{{title}}</a>→

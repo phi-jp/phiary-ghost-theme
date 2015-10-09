@@ -16,13 +16,16 @@
     {{! reset }}
     <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
 
-    {{! -------- }}
+    {{! highlight.js }}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/monokai.min.css">
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/docco.min.css"> -->
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/kimbie.light.min.css"> -->
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/solarized_light.min.css"> -->
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/tomorrow.min.css"> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+    {{! font-awesome }}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     {{! -------- }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
@@ -37,10 +40,21 @@
     <header id='header'>
       <div class='container'>
         <div class='row'>
-          <h1 class='col'>
-            <a href='{{@blog.url}}'>{{@blog.title}}</a>
-          </h1>
-          <p class='col'>{{@blog.description}}</p>
+          <div class='col s12 m6'>
+            <div class='row'>
+              <h1 class='col'>
+                <a href='{{@blog.url}}'>{{@blog.title}}</a>
+              </h1>
+              <p class='col'>{{@blog.description}}</p>
+            </div>
+          </div>
+          <div class='col s12 m6 share'>
+            <a target='_blank' href='{{@blog.url}}/rss/' class='btn'><i class="fa fa-rss"></i></a>
+            <a target='_blank' href='http://twitter.com/phi_jp' class='btn'><i class="fa fa-twitter"></i></a>
+            <a target='_blank' href='https://github.com/phi-jp' class='btn'><i class="fa fa-github"></i></a>
+            <a target='_blank' href='facebook' class='btn'><i class="fa fa-facebook"></i></a>
+            <a target='_blank' href='' class='btn'>B!</a>
+          </div>
         </div>
       </div>
     </header>
@@ -52,16 +66,20 @@
     <footer id='footer'>
       <div class='container'>
         <div class='row'>
-          <ul class='col s6'>
-            <li>About</li>
-            <li>Tags</li>
-            <li>Feed</li>
+          <ul class='col s12'>
+            <li><a href=''>About</a></li>
+            <li><a href=''>Tags</a></li>
+            <li><a href=''>Feed</a></li>
           </ul>
+          <!--
           <div class='col s6'>
             copy ...
           </div>
+          -->
         </div>
       </div>
     </footer>
+
+    {{ghost_foot}}
   </body>
 </html>

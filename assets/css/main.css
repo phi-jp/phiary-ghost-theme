@@ -236,6 +236,7 @@ a:focus {
 }
 #header .share {
   line-height: 2rem;
+  margin-top: 1rem;
   text-align: right;
 }
 #header .share .btn {
@@ -248,6 +249,11 @@ a:focus {
   box-shadow: 0px 0px 2px #888;
   border-radius: 100%;
   margin-right: 0.25rem;
+}
+@media only screen and (min-width : 750px) {
+  #header .share {
+    margin-top: 0rem;
+  }
 }
 #footer {
   border-top: 0.1rem dotted #545454;

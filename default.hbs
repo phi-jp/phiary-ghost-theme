@@ -6,7 +6,12 @@
     <meta charset='utf-8' />
     
     {{! -------- }}
+    {{#is "home"}}
+    <title>Home | {{@blog.title}}</title>
+    {{else}}
     <title>{{meta_title}} | {{@blog.title}}</title>
+    {{/is}}
+
     <meta name='description' content='{{meta_description}}' />
 
     {{! -------- }}

@@ -413,3 +413,33 @@ article.post table tr th {
 article.post table tr th {
   font-weight: bold;
 }
+.pagination {
+  margin: 4rem auto;
+  position: relative;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.pagination .page-number {
+  min-width: 100%;
+}
+.pagination .newer-posts {
+  position: absolute;
+  left: 0px;
+}
+.pagination .older-posts {
+  position: absolute;
+  right: 0px;
+}
+.read-next {
+  margin: 4rem auto;
+}
+.read-next h2 {
+  width: 100%;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.read-next .prev {
+  text-align: right;
+}

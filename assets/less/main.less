@@ -254,4 +254,27 @@ article.post {
     }
   }
 
+  table {
+    margin: 1rem 0px;
+    border: 1px solid hsl(0, 0%, 80%);
+    width: 100%;
+
+    tr {
+      border-top: 1px solid hsl(0, 0%, 80%);
+      background-color: hsl(0, 100%, 100%);
+
+      &:nth-child(2n) {
+        background-color: hsl(0, 0%, 97%);
+      }
+
+      td, th {
+        padding: 1rem;
+        border: 1px solid hsl(0, 0%, 80%);
+      }
+      th {
+        font-weight: bold;
+      }
+    }
+  }
+
 }

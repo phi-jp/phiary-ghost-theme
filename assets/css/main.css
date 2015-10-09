@@ -393,3 +393,23 @@ article.post pre {
 article.post pre code {
   padding: 10px;
 }
+article.post table {
+  margin: 1rem 0px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+article.post table tr {
+  border-top: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+article.post table tr:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+article.post table tr td,
+article.post table tr th {
+  padding: 1rem;
+  border: 1px solid #cccccc;
+}
+article.post table tr th {
+  font-weight: bold;
+}

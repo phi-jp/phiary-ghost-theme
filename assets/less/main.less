@@ -1,7 +1,7 @@
 
 @import 'part/variables';
 @import 'high/utils';
-@import 'high/grid';
+@import 'high/high';
 
 
 @plain-white: #FFF;
@@ -57,9 +57,9 @@ a {
 
   .container {
     .title {
-      text-align: center;
-      @media @tablet {
-        text-align: left;
+      text-align: left;
+      @media @media-mobile {
+        text-align: center;
       }
 
       > * {
@@ -80,7 +80,6 @@ a {
 
   .share {
     line-height: 2rem;
-    margin-top: 1rem;
     text-align: right;
     .btn {
       display: inline-block;
@@ -93,13 +92,13 @@ a {
       border-radius: 100%;
       margin-right: 0.25rem;
     }
-  }
 
-  @media @tablet {
-    .share {
-      margin-top: 0rem;
+    @media @media-mobile {
+      text-align: center;
+      margin-top: 1rem;
     }
   }
+
 }
 
 

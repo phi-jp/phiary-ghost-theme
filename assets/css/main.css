@@ -39,38 +39,20 @@
 @desktop: 1000px;
 @desktop-hd: 1200px;
 */
-.media:after {
-  content: 'mobile(default)';
-}
 /*
-@media @mobile {
-  .media:after { content: 'mobile'; }
-}
-*/
-@media only screen and (min-width : 750px) {
-  .media:after {
-    content: 'tablet';
-  }
-}
-@media only screen and (min-width : 1200px) {
-  .media:after {
-    content: 'desktop';
-  }
+ *
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container {
-  margin: 0 auto;
+  margin: 0px auto;
   max-width: 1280px;
   width: 90%;
-}
-@media only screen and (min-width : 550px) {
-  .container {
-    width: 85%;
-  }
-}
-@media only screen and (min-width : 750px) {
-  .container {
-    width: 70%;
-  }
 }
 .row:after {
   content: '';
@@ -117,7 +99,7 @@
 .row .col.s12 {
   width: 100%;
 }
-@media only screen and (min-width : 750px) {
+@media only screen and (min-width: 600px) and (max-width: 993px) {
   .row .col.m1 {
     width: 8.33333333%;
   }
@@ -155,7 +137,7 @@
     width: 100%;
   }
 }
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 993px) {
   .row .col.l1 {
     width: 8.33333333%;
   }
@@ -222,11 +204,11 @@ a:focus {
   margin-bottom: 6rem;
 }
 #header .container .title {
-  text-align: center;
+  text-align: left;
 }
-@media only screen and (min-width : 750px) {
+@media only screen and (max-width : 600px) {
   #header .container .title {
-    text-align: left;
+    text-align: center;
   }
 }
 #header .container .title > * {
@@ -244,7 +226,6 @@ a:focus {
 }
 #header .share {
   line-height: 2rem;
-  margin-top: 1rem;
   text-align: right;
 }
 #header .share .btn {
@@ -258,9 +239,10 @@ a:focus {
   border-radius: 100%;
   margin-right: 0.25rem;
 }
-@media only screen and (min-width : 750px) {
+@media only screen and (max-width : 600px) {
   #header .share {
-    margin-top: 0rem;
+    text-align: center;
+    margin-top: 1rem;
   }
 }
 #footer {

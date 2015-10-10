@@ -399,6 +399,7 @@ article.post pre {
 }
 article.post pre code {
   padding: 10px;
+  line-height: 1.1rem;
 }
 article.post table {
   margin: 1rem 0px;

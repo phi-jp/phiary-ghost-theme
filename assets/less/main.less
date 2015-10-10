@@ -56,18 +56,25 @@ a {
   margin-bottom: 6rem;
 
   .container {
-    h1 {
-      float: left;
-      font-size: 2rem;
-    }
-    p {
-      float: left;
-      margin-top: 0.3rem;
-      margin-left: 1.5rem;
-      padding-left: 1.5rem;
-      line-height: 2rem;
-      border-left: solid 1px hsla(0, 0%, 33%, 0.5);
-      font-size: 0.75rem;
+    .title {
+      text-align: center;
+      @media @tablet {
+        text-align: left;
+      }
+
+      > * {
+        display: inline-block;
+        line-height: 2rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        margin-left: 1.5rem;
+        padding-left: 1.5rem;
+        border-left: solid 1px hsla(0, 0%, 33%, 0.5);
+        font-size: 0.75rem;
+      }
     }
   }
 

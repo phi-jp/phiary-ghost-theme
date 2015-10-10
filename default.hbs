@@ -45,13 +45,11 @@
     <header id='header'>
       <div class='container'>
         <div class='row'>
-          <div class='col s12 m6'>
-            <div class='row'>
-              <h1 class='col'>
-                <a href='{{@blog.url}}'>{{@blog.title}}</a>
-              </h1>
-              <p class='col'>{{@blog.description}}</p>
-            </div>
+          <div class='col s12 m6 title'>
+            <h1>
+              <a href='{{@blog.url}}'>{{@blog.title}}</a>
+            </h1>
+            <p>{{@blog.description}}</p>
           </div>
           <div class='col s12 m6 share'>
             <a target='_blank' href='{{@blog.url}}/rss/' class='btn'><i class="fa fa-rss"></i></a>

@@ -221,16 +221,24 @@ a:focus {
   margin-top: 4rem;
   margin-bottom: 6rem;
 }
-#header .container h1 {
-  float: left;
+#header .container .title {
+  text-align: center;
+}
+@media only screen and (min-width : 750px) {
+  #header .container .title {
+    text-align: left;
+  }
+}
+#header .container .title > * {
+  display: inline-block;
+  line-height: 2rem;
+}
+#header .container .title h1 {
   font-size: 2rem;
 }
-#header .container p {
-  float: left;
-  margin-top: 0.3rem;
+#header .container .title p {
   margin-left: 1.5rem;
   padding-left: 1.5rem;
-  line-height: 2rem;
   border-left: solid 1px rgba(84, 84, 84, 0.5);
   font-size: 0.75rem;
 }

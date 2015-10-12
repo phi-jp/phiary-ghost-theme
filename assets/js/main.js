@@ -32,6 +32,8 @@
   };
 
   document.addEventListener('keydown', function(e) {
+    if (e.metaKey === false) return ;
+    
     var ch = String.fromCharCode(e.keyCode);
 
     if (ch === 'G') {

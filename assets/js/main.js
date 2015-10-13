@@ -17,8 +17,11 @@
       posts.each(function(i, post) {
         post = $(post);
         var data = {
+          id: i+1,
           title: post.find('title').text(),
           description: post.find('description').text(),
+          category: post.find('category').text(),
+          pubDate: post.find('pubDate').text(),
           link: post.find('link').text(),
         };
 
@@ -30,24 +33,23 @@
         anchor.attr('target', '_blank');
 
         article.data('data', data);
-
+        article.data('data_str', JSON.stringify(data));
       });
 
       $search.on('input', function() {
         var v = this.value;
-        console.log(v);
         $results.children().each(function(i, article) {
           article = $(article);
-          var data = article.data('data');
+          var data_str = article.data('data_str');
 
-          if (data.title.indexOf(v) !== -1) {
+          var re = new RegExp(v, 'i');
+
+          if (re.test(data_str)) {
             article.show();
           }
           else {
             article.hide();
           }
-
-          // console.log(data);
         });
       })
 
@@ -57,17 +59,6 @@
   $.ghostSearch.defaults = {
     search: '#search',
     results: '#results',
-  };
-
-  ghost.search = function(options) {
-    options = options || {};
-    options.search = options.search || '#search';
-    options.results = options.results || '#results';
-
-    var searchElement = document.querySelector(options.search);
-    var resultsElement = document.querySelector(options.results);
-
-
   };
 
 })();

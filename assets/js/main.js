@@ -72,7 +72,16 @@
 
   window.addEventListener('load', function() {
     setupTOC();
+    setupMario();
   }, false);
+
+  var setupMario = function() {
+    Mario({
+      x: window.innerWidth-100,
+      scale: 2,
+      direction: "left",
+    });
+  };
 
   var setupTOC = function() {
     var tocElement = document.getElementById('toc');

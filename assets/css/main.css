@@ -394,7 +394,10 @@ article.post img {
 }
 article.post iframe {
   max-width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.0rem;
+}
+article.post b {
+  font-weight: bold;
 }
 article.post blockquote {
   /*margin: 1.75em 0 1.75em -2.2em;*/

@@ -482,7 +482,7 @@ article.post b {
   font-weight: bold;
 }
 article.post blockquote {
-  /*margin: 1.75em 0 1.75em -2.2em;*/
+  padding: 0.5rem 1rem;
   margin: 1.75em 0 1.75em 0em;
   background-color: #f1f5fd;
   padding: 0 0 0 1.75em;

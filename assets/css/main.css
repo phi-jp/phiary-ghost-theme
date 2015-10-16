@@ -478,7 +478,8 @@ article.post iframe {
   max-width: 100%;
   margin-bottom: 1.0rem;
 }
-article.post b {
+article.post b,
+article.post strong {
   font-weight: bold;
 }
 article.post blockquote {

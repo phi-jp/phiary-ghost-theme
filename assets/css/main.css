@@ -314,6 +314,7 @@ a:focus {
     left: 0rem;
   }
   .side {
+    -webkit-transform: translate3d(-18rem, 0, 0);
     transform: translate3d(-18rem, 0, 0);
   }
 }
@@ -322,6 +323,7 @@ a:focus {
     left: 0rem;
   }
   .side {
+    -webkit-transform: translate3d(-18rem, 0, 0);
     transform: translate3d(-18rem, 0, 0);
   }
 }

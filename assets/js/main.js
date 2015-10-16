@@ -11,7 +11,7 @@
 
     $results.addClass('articles');
 
-    $.get('/rss', function(data) {
+    $.get('/rss/?limit=500', function(data) {
       var posts = $(data).find('item');
 
       posts.each(function(i, post) {

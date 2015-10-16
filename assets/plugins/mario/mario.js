@@ -123,7 +123,14 @@
         
         var context = eMario.getContext("2d");
 
-        context.imageSmoothingEnabled = false;
+        if (context.imageSmoothingEnabled) {
+          context.imageSmoothingEnabled = false;
+        }
+        else {
+          context.mozImageSmoothingEnabled = false;
+          context.webkitImageSmoothingEnabled = false;
+          context.msImageSmoothingEnabled = false;
+        }
 
         context.drawImage(tempCanvas, 0, 0, MARIO_BITMAP_WIDTH, MARIO_BITMAP_HEIGHT, 0, 0, eMario.width, eMario.height);
       };

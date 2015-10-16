@@ -261,15 +261,41 @@ a:focus {
   font-size: 0.9rem;
 }
 /*
+ *
+ */
 .main {
-  background: rgba(245, 245, 245, 0.5);
   position: absolute;
-  left: 13rem;
+  left: 18rem;
   right: 0;
   top: 0;
   bottom: 0;
+  transform: translate3d(0, 0, 0);
 }
-*/
+.side {
+  position: fixed;
+  z-index: 1;
+  width: 18rem;
+  height: 100%;
+  background-color: #aaa;
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: width 350ms;
+}
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  .main {
+    left: 0rem;
+  }
+  .side {
+    width: 0rem;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .main {
+    left: 0rem;
+  }
+  .side {
+    width: 0rem;
+  }
+}
 .articles {
   margin-bottom: 3rem;
   margin-top: 3rem;

@@ -87,47 +87,53 @@
     
   </head>
   <body>
-    <header id='header'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col s12 m6 l6 title'>
-            <h1>
-              <a href='{{@blog.url}}'>{{@blog.title}}</a>
-            </h1>
-            <p>{{@blog.description}}</p>
-          </div>
-          <div class='col s12 m6 l6 share'>
-            <a target='_blank' href='http://feedly.com/i/subscription/feed/{{url absolute=true}}rss' class='btn'>
-              <img src='http://s3.feedly.com/img/follows/feedly-follow-logo-black_2x.png' width='20px' height='20px' style='transform:translate(0, 4px);' />
-            </a>
-            <a target='_blank' href='{{@blog.url}}/rss/' class='btn'><i class="fa fa-rss"></i></a>
-            <a target='_blank' href='http://twitter.com/phi_jp' class='btn'><i class="fa fa-twitter"></i></a>
-            <a target='_blank' href='https://github.com/phi-jp' class='btn'><i class="fa fa-github"></i></a>
+    <div class='main'>
+      <header id='header'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col s12 m6 l6 title'>
+              <h1>
+                <a href='{{@blog.url}}'>{{@blog.title}}</a>
+              </h1>
+              <p>{{@blog.description}}</p>
+            </div>
+            <div class='col s12 m6 l6 share'>
+              <a target='_blank' href='http://feedly.com/i/subscription/feed/{{url absolute=true}}rss' class='btn'>
+                <img src='http://s3.feedly.com/img/follows/feedly-follow-logo-black_2x.png' width='20px' height='20px' style='transform:translate(0, 4px);' />
+              </a>
+              <a target='_blank' href='{{@blog.url}}/rss/' class='btn'><i class="fa fa-rss"></i></a>
+              <a target='_blank' href='http://twitter.com/phi_jp' class='btn'><i class="fa fa-twitter"></i></a>
+              <a target='_blank' href='https://github.com/phi-jp' class='btn'><i class="fa fa-github"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <div class='main'>
-      {{{body}}}
+      <div class='content'>
+        {{{body}}}
+      </div>
+
+      <footer id='footer'>
+        <div class='container'>
+          <div class='row'>
+            <ul class='col s12'>
+              <li><a href=''>About</a></li>
+              <li><a href=''>Tags</a></li>
+              <li><a target='_blank' href='{{@blog.url}}/rss/'>Feed</a></li>
+            </ul>
+            <!--
+            <div class='col s6'>
+              copy ...
+            </div>
+            -->
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <footer id='footer'>
-      <div class='container'>
-        <div class='row'>
-          <ul class='col s12'>
-            <li><a href=''>About</a></li>
-            <li><a href=''>Tags</a></li>
-            <li><a target='_blank' href='{{@blog.url}}/rss/'>Feed</a></li>
-          </ul>
-          <!--
-          <div class='col s6'>
-            copy ...
-          </div>
-          -->
-        </div>
-      </div>
-    </footer>
+    <div class='side'>
+      <h2>phi</h2>
+    </div>
 
     {{ghost_foot}}
   </body>

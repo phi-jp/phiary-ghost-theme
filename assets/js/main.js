@@ -78,6 +78,7 @@
   var setupMario = function() {
     Mario({
       x: window.innerWidth-100,
+      floorHeight: 73,
       scale: 2,
       direction: "left",
     });

@@ -26,7 +26,7 @@
      -moz-@{property}: @value;
           @{property}: @value;
 }
-.vender-value(@property, @value) {
+.vendor-value(@property, @value) {
   @{property}: ~"-webkit-@{value}";
   @{property}: ~"-moz-@{value}";
   @{property}: @value;
@@ -35,7 +35,7 @@
 // Basic
 
 *, *:before, *:after {
-  .vender(box-sizing, border-box);
+  .vendor(box-sizing, border-box);
 }
 
 a, a:visited {
@@ -161,9 +161,10 @@ a {
   .cover {
     width: 100%;
     height: 100%;
-    .vender-value(display,flex);
+    .vendor-value(display,flex);
     align-items: center;
     text-align: center;
+    box-shadow: 2px 0px 4px 0px hsl(0, 0%, 50%);
 
     .profile {
       width: 100%;

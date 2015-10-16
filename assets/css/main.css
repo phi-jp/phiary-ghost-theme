@@ -298,6 +298,7 @@ a:focus {
   display: flex;
   align-items: center;
   text-align: center;
+  box-shadow: 2px 0px 4px 0px #808080;
 }
 .side .cover .profile {
   width: 100%;

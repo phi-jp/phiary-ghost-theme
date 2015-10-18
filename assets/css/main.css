@@ -405,12 +405,12 @@ article.post header .meta .post-date {
   padding-left: 0.5rem;
   border-left: #d4dadd 1px solid;
 }
-article.post footer .share {
+article.post .share {
   line-height: 2rem;
   margin-top: 1rem;
   text-align: center;
 }
-article.post footer .share .btn {
+article.post .share .btn {
   display: inline-block;
   width: 2rem;
   height: 2rem;

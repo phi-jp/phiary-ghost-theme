@@ -456,6 +456,7 @@ article.post p code {
   padding: 0.2rem 0.3rem 0.1rem;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.85rem;
+  word-wrap: initial;
 }
 article.post a {
   color: #00c3e6;

@@ -310,6 +310,9 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transition: 350ms;
   -moz-transition: 350ms;
   transition: 350ms;

@@ -299,6 +299,8 @@ body {
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
   align-items: center;
   text-align: center;
   box-shadow: 2px 0px 4px 0px #808080;

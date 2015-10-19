@@ -373,6 +373,7 @@ body {
 article.post {
   font-size: 0.9rem;
   color: #333333;
+  word-wrap: break-word;
 }
 article.post header {
   margin-top: 2rem;

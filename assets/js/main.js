@@ -120,7 +120,7 @@
   });
 
   // fadeout
-  window.addEventListener('load', function() {
+  window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.content').classList.add('fadein');
   });
   // window.onlo
@@ -128,6 +128,17 @@
     document.querySelector('.content').classList.add('fadeout');
   }, false);
 
-
+  // lazy
+  var iframes = $('iframe');
+  iframes.attr('data-src', function() {
+    var src = $(this).attr('src');
+    $(this).removeAttr('src');
+    return src;
+  });
+  window.addEventListener('DOMContentLoaded', function() {
+    iframes.attr('src', function() {
+      return $(this).data('src');
+    });
+  });
 
 })();

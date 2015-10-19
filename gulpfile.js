@@ -5,7 +5,9 @@ var less = require('gulp-less');
 gulp.task('less', function() {
   gulp
     .src(['assets/less/main.less'])
-    .pipe(less())
+    .pipe(less({
+      ieCompat: false,
+    }))
     .pipe(gulp.dest('assets/css/'))
     ;
 });

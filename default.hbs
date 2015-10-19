@@ -100,12 +100,19 @@
               <p>{{@blog.description}}</p>
             </div>
             <div class='col s12 m6 l6 share'>
-              <a target='_blank' href='http://feedly.com/i/subscription/feed/{{url absolute=true}}rss' class='btn'>
-                <img src='http://s3.feedly.com/img/follows/feedly-follow-logo-black_2x.png' width='20px' height='20px' style='transform:translate(0, 4px);' />
+              <a target='_blank' href='http://feedly.com/i/subscription/feed/{{url absolute=true}}rss' class='btn-circle'>
+                <img src='http://s3.feedly.com/img/follows/feedly-follow-logo-black_2x.png' width='20px' height='20px' />
               </a>
-              <a target='_blank' href='{{@blog.url}}/rss/' class='btn'><i class="fa fa-rss"></i></a>
-              <a target='_blank' href='http://twitter.com/phi_jp' class='btn'><i class="fa fa-twitter"></i></a>
-              <a target='_blank' href='https://github.com/phi-jp' class='btn'><i class="fa fa-github"></i></a>
+              
+              <a target='_blank' href='{{@blog.url}}/rss/' class='btn-circle'>
+                <i class="fa fa-rss"></i>
+              </a>
+              <a target='_blank' href='http://twitter.com/phi_jp' class='btn-circle'>
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a target='_blank' href='https://github.com/phi-jp' class='btn-circle'>
+                <i class="fa fa-github"></i>
+              </a>
             </div>
           </div>
         </div>

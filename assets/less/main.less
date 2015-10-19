@@ -32,6 +32,18 @@
   @{property}: @value;
 }
 
+.btn-circle {
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 0px 4px 0px #aaa;
+  
+  img {
+    position: relative;
+    top: 50%;
+    .vendor(transform, translateY(-50%));
+  }
+}
+
 // Basic
 
 *, *:before, *:after {
@@ -95,15 +107,12 @@ body {
   .share {
     line-height: 2rem;
     text-align: right;
-    .btn {
+    .btn-circle {
       display: inline-block;
       width: 2rem;
       height: 2rem;
-      text-align: center;
-      line-height: 2rem;
+
       font-size: 0.9rem;
-      box-shadow: 0px 0px 2px #888;
-      border-radius: 100%;
       margin-right: 0.25rem;
     }
 
@@ -292,15 +301,11 @@ article.post {
     line-height: 2rem;
     margin-top: 1rem;
     text-align: center;
-    .btn {
+    .btn-circle {
       display: inline-block;
       width: 2rem;
       height: 2rem;
-      text-align: center;
-      line-height: 2rem;
       font-size: 0.9rem;
-      box-shadow: 0px 0px 2px #888;
-      border-radius: 100%;
       margin-right: 0.25rem;
       text-decoration: none;
     }

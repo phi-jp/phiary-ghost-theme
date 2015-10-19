@@ -44,6 +44,15 @@
   }
 }
 
+.fadein {
+  .vendor(transition, opacity 200ms ease-in);
+  opacity: 1.0 !important;
+}
+.fadeout {
+  .vendor(transition, opacity 200ms ease-in);
+  opacity: 0 !important;
+}
+
 // Basic
 
 *, *:before, *:after {
@@ -141,6 +150,10 @@ body {
       }
     }
   }
+}
+
+.content {
+  opacity: 0;
 }
 
 

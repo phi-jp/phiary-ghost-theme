@@ -187,6 +187,18 @@
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.fadein {
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  opacity: 1.0 !important;
+}
+.fadeout {
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  opacity: 0 !important;
+}
 *,
 *:before,
 *:after {
@@ -272,6 +284,9 @@ body {
 }
 #footer ul li a {
   font-size: 0.9rem;
+}
+.content {
+  opacity: 0;
 }
 /*
  *

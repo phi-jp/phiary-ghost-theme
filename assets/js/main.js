@@ -119,5 +119,15 @@
     }
   });
 
+  // fadeout
+  window.addEventListener('load', function() {
+    document.querySelector('.content').classList.add('fadein');
+  });
+  // window.onlo
+  window.addEventListener('beforeunload', function() {
+    document.querySelector('.content').classList.add('fadeout');
+  }, false);
+
+
 
 })();

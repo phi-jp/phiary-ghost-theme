@@ -286,7 +286,7 @@ body {
   font-size: 0.9rem;
 }
 .content {
-  opacity: 0.01;
+  opacity: 0.1;
 }
 /*
  *
@@ -479,7 +479,9 @@ article.post p {
   margin-bottom: 1.5em;
   line-height: 1.6rem;
 }
-article.post p code {
+article.post p code,
+article.post ol code,
+article.post ul code {
   border: #d8e0e4 1px solid;
   background-color: #f6f8f9;
   color: #cd2356;

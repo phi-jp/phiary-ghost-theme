@@ -102,6 +102,17 @@
 
       header.id = 'post-header-id-' + i;
       anchor.href = '#' + header.id;
+
+      $(anchor).click(function() {
+        var offset = 20;
+        var query = '#' + header.id;
+        var v = $(query).offset().top - offset;
+        $("html,body").animate({scrollTop:v},'easeOutExpo', function() {
+          location.hash = header.id;
+        });
+
+        return false;
+      });
     });
 
   };

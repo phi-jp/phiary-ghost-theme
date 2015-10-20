@@ -508,7 +508,7 @@ article.post ul {
 article.post ol {
   list-style-type: decimal;
 }
-article.post img {
+article.post section img {
   padding: 10px;
   max-width: 100%;
   outline: 10px solid #add6eb;

@@ -511,6 +511,8 @@ article.post ol {
 article.post img {
   max-width: 100%;
   border: 1px solid rgba(204, 204, 204, 0.5);
+  padding: 10px;
+  background: #add6eb;
 }
 article.post iframe {
   max-width: 100%;

@@ -488,7 +488,6 @@ article.post ul code {
   padding: 0.2rem 0.3rem 0.1rem;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.85rem;
-  word-wrap: initial;
 }
 article.post a {
   color: #00c3e6;
@@ -542,6 +541,7 @@ article.post pre {
 article.post pre code {
   padding: 10px;
   line-height: 1.1rem;
+  word-wrap: initial;
 }
 article.post table {
   margin: 1rem 0px;

@@ -23,7 +23,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     {{! reset }}
-    <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
+    <!-- <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' /> -->
+    <style>
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+    </style>
 
     {{! normalize }}
     <!-- <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css' /> -->
@@ -31,25 +34,11 @@
     {{! sanitize}}
     <!-- <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.css' /> -->
 
-    {{! highlight.js }}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/monokai.min.css">
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/docco.min.css"> -->
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/kimbie.light.min.css"> -->
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/solarized_light.min.css"> -->
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/tomorrow.min.css"> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
-
-    {{! jquery}}
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-    
     {{! font-awesome }}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    {{! -------- }}
+    {{! user }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
-
-    {{! mario }}
-    <script src='{{asset "plugins/mario/mario.js"}}'></script>
 
     {{! -------- }}
     {{ghost_head}}
@@ -156,6 +145,25 @@
     </div>
 
     {{ghost_foot}}
+
+
+
+    {{! highlight.js }}
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/monokai.min.css"> -->
+    <style>
+    .hljs{display:block;overflow-x:auto;padding:0.5em;background:#272822;-webkit-text-size-adjust:none}.hljs-tag,.hljs-tag .hljs-title,.hljs-keyword,.hljs-literal,.hljs-strong,.hljs-change,.hljs-winutils,.hljs-flow,.nginx .hljs-title,.tex .hljs-special{color:#f92672}.hljs{color:#ddd}.hljs .hljs-constant,.asciidoc .hljs-code,.markdown .hljs-code{color:#66d9ef}.hljs-code,.hljs-class .hljs-title,.hljs-header{color:white}.hljs-link_label,.hljs-attribute,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-value,.hljs-regexp{color:#bf79db}.hljs-link_url,.hljs-tag .hljs-value,.hljs-string,.hljs-bullet,.hljs-subst,.hljs-title,.hljs-emphasis,.hljs-type,.hljs-preprocessor,.hljs-pragma,.ruby .hljs-class .hljs-parent,.hljs-built_in,.django .hljs-template_tag,.django .hljs-variable,.smalltalk .hljs-class,.django .hljs-filter .hljs-argument,.smalltalk .hljs-localvars,.smalltalk .hljs-array,.hljs-attr_selector,.hljs-pseudo,.hljs-addition,.hljs-stream,.hljs-envvar,.apache .hljs-tag,.apache .hljs-cbracket,.tex .hljs-command,.hljs-prompt,.hljs-name{color:#a6e22e}.hljs-comment,.hljs-annotation,.smartquote,.hljs-blockquote,.hljs-horizontal_rule,.hljs-decorator,.hljs-pi,.hljs-doctype,.hljs-deletion,.hljs-shebang,.apache .hljs-sqbracket,.tex .hljs-formula{color:#75715e}.hljs-keyword,.hljs-literal,.css .hljs-id,.hljs-doctag,.hljs-title,.hljs-header,.hljs-type,.vbscript .hljs-built_in,.rsl .hljs-built_in,.smalltalk .hljs-class,.diff .hljs-header,.hljs-chunk,.hljs-winutils,.bash .hljs-variable,.apache .hljs-tag,.tex .hljs-special,.hljs-request,.hljs-status{font-weight:bold}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .javascript,.xml .vbscript,.xml .css,.xml .hljs-cdata{opacity:0.5}
+    </style>
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/docco.min.css"> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/kimbie.light.min.css"> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/solarized_light.min.css"> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/tomorrow.min.css"> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+    {{! jquery}}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
+    {{! mario }}
+    <script src='{{asset "plugins/mario/mario.js"}}'></script>
 
     {{! -------- }}
     <script src='{{asset "js/main.js"}}'></script>

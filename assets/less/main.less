@@ -21,16 +21,6 @@
 @visited-link: @basic-black;
 @border-color: @light-black;
 
-.vendor(@property, @value) {
-  -webkit-@{property}: @value;
-     -moz-@{property}: @value;
-          @{property}: @value;
-}
-.vendor-value(@property, @value) {
-  @{property}: ~"-webkit-@{value}";
-  @{property}: ~"-moz-@{value}";
-  @{property}: @value;
-}
 
 .btn-circle {
   border-radius: 50%;
@@ -40,30 +30,30 @@
   img {
     position: relative;
     top: 50%;
-    .vendor(transform, translateY(-50%));
+    transform: translateY(-50%);
   }
 }
 
 .fadein {
-  .vendor(transition, opacity 200ms ease-in);
+  transition: opacity 200ms ease-in;
   opacity: 1.0 !important;
 }
 .fadeout {
-  .vendor(transition, opacity 200ms ease-in);
+  transition: opacity 200ms ease-in;
   opacity: 0 !important;
 }
 
 // Basic
 
 *, *:before, *:after {
-  .vendor(box-sizing, border-box);
+  box-sizing: border-box;
 }
 
 a, a:visited {
   text-decoration: none;
   color: @active-link;
   outline: 0;
-  .vendor(transition, color 0.2s ease-in);
+  transition: color 0.2s ease-in;
 }
 
 a {
@@ -167,9 +157,9 @@ body {
   top: 0;
   bottom: 0;
 
-  .vendor(transform, translate3d(0, 0, 0));
-  .vendor(backface-visibility, hidden); // ちらつき対策
-  .vendor(transform-style, preserve-3d); // ちらつき対策
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden; // ちらつき対策
+  transform-style: preserve-3d; // ちらつき対策
 }
 .side {
   position: fixed;
@@ -177,10 +167,10 @@ body {
   width: 18rem;
   height: 100%;
 
-  .vendor(transform, translate3d(0, 0, 0));
-  .vendor(backface-visibility, hidden); // ちらつき対策
-  .vendor(transform-style, preserve-3d); // ちらつき対策
-  .vendor(transition, 350ms);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden; // ちらつき対策
+  transform-style: preserve-3d; // ちらつき対策
+  transition: 350ms;
 
   background-color: #ddd;
   background: data-uri('../img/bg.jpg') no-repeat center center;
@@ -192,8 +182,8 @@ body {
   .cover {
     width: 100%;
     height: 100%;
-    .vendor-value(display,flex);
-    .vendor(align-items, center);
+    display: flex;
+    align-items: center;
     text-align: center;
     box-shadow: 2px 0px 4px 0px hsl(0, 0%, 50%);
 
@@ -228,7 +218,7 @@ body {
     left: 0rem;
   }
   .side {
-    .vendor(transform, translate3d(-18rem, 0, 0));
+    transform: translate3d(-18rem, 0, 0);
   }
 }
 
@@ -237,7 +227,7 @@ body {
     left: 0rem;
   }
   .side {
-    .vendor(transform, translate3d(-18rem, 0, 0));
+    transform: translate3d(-18rem, 0, 0);
   }
 }
 

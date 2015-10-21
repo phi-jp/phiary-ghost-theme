@@ -11,6 +11,7 @@ gulp.task('less', function() {
     }))
     .pipe(pleeease({
       minifier: false,
+      // rem: false,
       // autoprefixer: {"browsers": ["last 2 versions"]}
     }))
     .pipe(gulp.dest('assets/css/'))

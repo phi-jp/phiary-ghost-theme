@@ -1,0 +1,5 @@
+# robots.txt in phiary-ghost-theme
+
+User-agent: *
+Sitemap: {{blog-url}}/sitemap.xml
+Disallow: /ghost/

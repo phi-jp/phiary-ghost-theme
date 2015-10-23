@@ -555,9 +555,23 @@ article.post ul code {
   font-size: 13.6px;
   font-size: 0.85rem;
 }
+article.post ol ol,
+article.post ul ol,
+article.post ol ul,
+article.post ul ul {
+  margin: 0px;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
 article.post a {
   color: #00c3e6;
   text-decoration: underline;
+}
+article.post ul {
+  list-style-type: disc;
+}
+article.post ol {
+  list-style-type: decimal;
 }
 article.post ol,
 article.post ul {
@@ -571,12 +585,6 @@ article.post ul {
 article.post ol li,
 article.post ul li {
   margin: 0.6em 0;
-}
-article.post ul {
-  list-style-type: disc;
-}
-article.post ol {
-  list-style-type: decimal;
 }
 article.post section img {
   max-width: 100%;

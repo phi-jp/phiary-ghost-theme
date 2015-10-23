@@ -88,6 +88,32 @@
     var tocElement = document.getElementById('toc');
     if (!tocElement) return ;
 
+    var header2List = function(headers, id_prefix) {
+      var ul = document.createElement('ul');
+
+      headers.forEach(function(header, i) {
+        var id = id_prefix + '_' + i;
+        var li = document.createElement('li'); ul.appendChild(li);
+        var anchor = document.createElement('a'); li.appendChild(anchor);
+        anchor.innerHTML = header.innerHTML;
+        anchor.href = '#' + id;
+        header.id = id;
+
+        $(anchor).click(function() {
+          var offset = 20;
+          var query = '#' + id;
+          var v = $(query).offset().top - offset;
+          $("html,body").animate({scrollTop:v},'easeOutExpo', function() {
+            location.hash = id;
+          });
+
+          return false;
+        });
+      });
+
+      return ul;
+    };
+
     var toList = function(element, tagName, children) {
       var list = document.createElement('ul');
 
@@ -124,28 +150,7 @@
         }
 
         if (subHeaders.length) {
-          var subList = document.createElement('ul');
-          subHeaders.forEach(function(header, i) {
-            var li = document.createElement('li');
-            subList.appendChild(li);
-            var anchor = document.createElement('a');
-            li.appendChild(anchor);
-            anchor.innerHTML = header.innerHTML;
-            header.id = 'post-h3-id-' + i;
-            anchor.href = '#' + header.id;
-
-            $(anchor).click(function() {
-              var offset = 20;
-              var query = '#' + header.id;
-              var v = $(query).offset().top - offset;
-              $("html,body").animate({scrollTop:v},'easeOutExpo', function() {
-                location.hash = header.id;
-              });
-
-              return false;
-            });
-
-          });
+          var subList = header2List(subHeaders, 'post-h3-id');
           li.appendChild(subList);
         }
       });

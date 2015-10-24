@@ -150,7 +150,7 @@
         }
 
         if (subHeaders.length) {
-          var subList = header2List(subHeaders, 'post-h3-id');
+          var subList = header2List(subHeaders, 'post-h3-id-' + i);
           li.appendChild(subList);
         }
       });

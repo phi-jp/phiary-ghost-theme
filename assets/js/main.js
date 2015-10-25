@@ -66,7 +66,7 @@
 ;(function() {
 
   window.addEventListener("DOMContentLoaded", function() {
-    hljs.initHighlightingOnLoad();
+    setupHighlight();
     setupTOC();
   }, false);
 
@@ -74,6 +74,13 @@
   window.addEventListener('load', function() {
     setupMario();
   }, false);
+
+  var setupHighlight = function() {
+    $('article.post pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+    // hljs.initHighlightingOnLoad();
+  };
 
   var setupMario = function() {
     Mario({

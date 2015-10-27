@@ -228,6 +228,7 @@ a:focus {
 }
 body {
   font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #fafbff;
 }
 #header {
   margin-top: 64px;
@@ -646,6 +647,12 @@ article.post table tr th {
 }
 article.post table tr th {
   font-weight: bold;
+}
+#disqus_thread iframe {
+  padding: 16px 32px;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 4px 0px #ababab;
+  background-color: white;
 }
 .pagination {
   margin: 64px auto;

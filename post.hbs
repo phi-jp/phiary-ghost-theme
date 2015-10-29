@@ -17,7 +17,7 @@
           <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
         </div>
         <div class='share'>
-          <a target='_blank' href='http://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}&hashtags=phiary&via=phi_jp' class='btn-circle'><i class="fa fa-twitter"></i></a>
+          <a target='_blank' href='http://twitter.com/intent/tweet?text=『{{encode (title)}}』&url={{url absolute="true"}}&hashtags=phiary&via=phi_jp' class='btn-circle'><i class="fa fa-twitter"></i></a>
           <a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}' class='btn-circle'><i class="fa fa-facebook"></i></a>
           <a target='_blank' href='http://b.hatena.ne.jp/entry/{{url absolute="true"}}' class='btn-circle'>B!</a>
           <a target='_blank' href='https://getpocket.com/edit?url={{url absolute="true"}}' class='btn-circle'><i class="fa fa-get-pocket"></i></a>
@@ -30,7 +30,7 @@
 
       <footer>
         <div class='share'>
-          <a target='_blank' href='http://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}&hashtags=phiary&via=phi_jp' class='btn-circle'><i class="fa fa-twitter"></i></a>
+          <a target='_blank' href='http://twitter.com/intent/tweet?text=『{{encode (title)}}』&url={{url absolute="true"}}&hashtags=phiary&via=phi_jp' class='btn-circle'><i class="fa fa-twitter"></i></a>
           <a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}' class='btn-circle'><i class="fa fa-facebook"></i></a>
           <a target='_blank' href='http://b.hatena.ne.jp/entry/{{url absolute="true"}}' class='btn-circle'>B!</a>
           <a target='_blank' href='https://getpocket.com/edit?url={{url absolute="true"}}' class='btn-circle'><i class="fa fa-get-pocket"></i></a>

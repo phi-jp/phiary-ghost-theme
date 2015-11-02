@@ -36,8 +36,9 @@
         article.data('data_str', JSON.stringify(data));
       });
 
-      $search.on('input', function() {
-        var v = this.value;
+      var filter = function(v) {
+        if (!v) return ;
+
         $results.children().each(function(i, article) {
           article = $(article);
           var data_str = article.data('data_str');
@@ -51,8 +52,13 @@
             article.hide();
           }
         });
-      })
+      };
 
+      $search.on('input', function() {
+        filter(this.value);
+      });
+
+      filter($search.val());
     });
   };
 
@@ -177,8 +183,11 @@
     if (ch === 'G') {
       location.href = '/ghost';
     }
-    if (ch === 'E') {
+    else if (ch === 'E') {
       location.href += '/edit';
+    }
+    else if (ch === 'S') {
+      location.href = '/search';
     }
   });
 

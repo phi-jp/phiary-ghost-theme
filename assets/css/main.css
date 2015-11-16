@@ -443,6 +443,8 @@ article.post {
   font-size: 0.9rem;
   color: #333333;
   word-wrap: break-word;
+  line-height: 19.2px;
+  line-height: 1.2rem;
 }
 article.post header {
   margin-top: 32px;

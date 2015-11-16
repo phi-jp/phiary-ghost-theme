@@ -515,8 +515,8 @@ article.post h2 {
   padding-bottom: 0.5rem;
 }
 article.post h3 {
-  margin-top: 64px;
-  margin-top: 4rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   font-size: 17.6px;
@@ -593,6 +593,11 @@ article.post section img {
   /*padding: 10px;*/
   /*outline: 10px solid hsl(200, 61%, 80%);*/
   /*background: hsl(200, 60%, 80%);*/
+}
+article.post .eyecache {
+  margin: 48px 0;
+  margin: 3rem 0;
+  text-align: center;
 }
 article.post iframe {
   max-width: 100%;

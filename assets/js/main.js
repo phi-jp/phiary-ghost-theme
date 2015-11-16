@@ -171,8 +171,14 @@
       return list;
     };
 
+    // add list
     var listElement = toList(tocElement.parentNode, 'h2');
     tocElement.appendChild(listElement);
+
+    // add header
+    var header = document.createElement('h2');
+    header.innerHTML = 'Table of contents';
+    $(tocElement).prepend(header);
   };
 
   document.addEventListener('keydown', function(e) {

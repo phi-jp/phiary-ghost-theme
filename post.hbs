@@ -25,6 +25,12 @@
         </div>
       </header>
       <section>
+        {{#if image}}
+        <div class='eyecache'>
+          <img src='{{image}}' />
+        </div>
+        {{/if}}
+
         {{content}}
       </section>
 

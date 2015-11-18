@@ -93,6 +93,8 @@ body {
   // http://sole-color-blog.com/blog/design/246/
   font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
   background-color: rgb(254, 254, 254);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 #header {
@@ -285,7 +287,7 @@ body {
 
 article.post {
   font-size: 0.9rem;
-  color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 33%);
   word-wrap: break-word;
   line-height: 1.2rem;
 
@@ -340,18 +342,23 @@ article.post {
     }
   }
 
+  h2, h3, h4 {
+    color: hsl(0, 0%, 20%);
+  }
+
   h2 {
     font-size: 1.5rem;
     border-bottom: dotted 0.075em hsl(0, 0%, 33%);
     margin-top: 5rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
+    line-height: 1.2em;
   }
   h3 {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    line-height: 1.2rem;
+    line-height: 1.2em;
     font-weight: bold;
     // color: hsl(0, 0%, 50%);
 
@@ -400,7 +407,7 @@ article.post {
 
 
   ul {
-    list-style-type: disc;
+    list-style-type: circle;
   }
 
   ol {

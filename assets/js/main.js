@@ -16,14 +16,14 @@ Object.defineProperty(Date.prototype, 'format', {
     var minutes = this.getMinutes();
     var seconds = this.getSeconds();
     var millseconds = this.getMilliseconds();
-    
+
     var patterns = {
       'yyyy': String('0000' + year).slice(-4),
       'yy': year.toString().substr(2, 2),
       'y': year,
 
-      'MMMM': MONTH[day],
-      'MMM': MONTH[day].substr(0, 3),
+      'MMMM': MONTH[month],
+      'MMM': MONTH[month].substr(0, 3),
       'MM': String('00' + (month+1)).slice(-2),
       'M': (month+1),
 
@@ -81,7 +81,9 @@ Object.defineProperty(Date.prototype, 'format', {
         var article = $('<article>').appendTo($results);
         var p = $('<p>').appendTo(article);
         var anchor = $('<a>').appendTo(p);
-        anchor.text(new Date(data.pubDate).format('dd MMM yy - ') + ' ' + data.title);
+        var date = new Date(data.pubDate);
+
+        anchor.text(date.format('dd MMM yy - ') + ' ' + data.title);
         anchor.attr('href', data.link);
         anchor.attr('target', '_blank');
 

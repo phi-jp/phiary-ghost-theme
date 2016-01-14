@@ -53,8 +53,56 @@ Object.defineProperty(Date.prototype, 'format', {
 });
 
 ;(function() {
+  // 存在チェック
+  if (String.prototype.format == undefined) {  
+    /**
+     * フォーマット関数
+     */
+    String.prototype.format = function(arg)
+    {
+      // 置換ファンク
+      var rep_fn = undefined;
+
+      // オブジェクトの場合
+      if (typeof arg == "object") {
+        rep_fn = function(m, k) { return arg[k]; }
+      }
+      // 複数引数だった場合
+      else {
+        var args = arguments;
+        rep_fn = function(m, k) { return args[ parseInt(k) ]; }
+      }
+
+      return this.replace( /\{(\w+)\}/g, rep_fn );
+    }
+  }
+})();
+
+;(function() {
 
   var ghost = window.ghost = window.ghost || {};
+
+  ghost.getPosts = function(callback) {
+    $.get('/rss/?limit=500', function(data) {
+      var items = $(data).find('item');
+      var posts = [];
+      items.each(function(i, item) {
+        item = $(item);
+        var post = {
+          id: i+1,
+          title: item.find('title').text(),
+          description: item.find('description').text(),
+          category: item.find('category').text(),
+          pubDate: item.find('pubDate').text(),
+          link: item.find('link').text(),
+        };
+
+        posts.push(post);
+      });
+
+      callback && callback(posts);
+    });
+  };
 
   $.ghostSearch = function(options) {
     var opts = $.extend( {}, $.ghostSearch.defaults, options );
@@ -275,3 +323,4 @@ Object.defineProperty(Date.prototype, 'format', {
   });
 
 })();
+

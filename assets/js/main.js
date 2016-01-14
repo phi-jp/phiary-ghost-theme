@@ -1,4 +1,57 @@
 
+Object.defineProperty(Date.prototype, 'format', {  
+  value: function(pattern) {
+    var MONTH = [
+      'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    var WEEK = [
+      'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+    ];
+    
+    var year    = this.getFullYear();
+    var month   = this.getMonth();
+    var date    = this.getDate();
+    var day     = this.getDay();
+    var hours   = this.getHours();
+    var minutes = this.getMinutes();
+    var seconds = this.getSeconds();
+    var millseconds = this.getMilliseconds();
+    
+    var patterns = {
+      'yyyy': String('0000' + year).slice(-4),
+      'yy': year.toString().substr(2, 2),
+      'y': year,
+
+      'MMMM': MONTH[day],
+      'MMM': MONTH[day].substr(0, 3),
+      'MM': String('00' + (month+1)).slice(-2),
+      'M': (month+1),
+
+      'dd': String('00' + date).slice(-2),
+      'd': date,
+
+      'EEEE': WEEK[day],
+      'EEE': WEEK[day].substr(0, 3),
+
+      'HH': String('00' + hours).slice(-2),
+      'H': hours,
+
+      'mm': String('00' + minutes).slice(-2),
+      'm': minutes,
+
+      'ss': String('00' + seconds).slice(-2),
+      's': seconds,
+    };
+    
+    var regstr = '(' + Object.keys(patterns).join('|') + ')';
+    var re = new RegExp(regstr, 'g');
+
+    return pattern.replace(re, function(str) {
+      return patterns[str];
+    });
+  },
+});
+
 ;(function() {
 
   var ghost = window.ghost = window.ghost || {};
@@ -28,7 +81,7 @@
         var article = $('<article>').appendTo($results);
         var p = $('<p>').appendTo(article);
         var anchor = $('<a>').appendTo(p);
-        anchor.text(data.title);
+        anchor.text(new Date(data.pubDate).format('dd MMM yy - ') + ' ' + data.title);
         anchor.attr('href', data.link);
         anchor.attr('target', '_blank');
 

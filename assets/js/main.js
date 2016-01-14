@@ -88,6 +88,7 @@ Object.defineProperty(Date.prototype, 'format', {
       var posts = [];
       items.each(function(i, item) {
         item = $(item);
+
         var post = {
           id: i+1,
           title: item.find('title').text(),
@@ -95,6 +96,7 @@ Object.defineProperty(Date.prototype, 'format', {
           category: item.find('category').text(),
           pubDate: item.find('pubDate').text(),
           link: item.find('link').text(),
+          image: item.find('content').attr('url'),
         };
 
         posts.push(post);

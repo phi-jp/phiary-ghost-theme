@@ -103,7 +103,7 @@
 .row .col.s12 {
   width: 100%;
 }
-@media only screen and (min-width: 600px) and (max-width: 993px) {
+@media only screen and (min-width: @{mobile + 1}) and (max-width: @{desktop - 1}) {
   .row .col.m1 {
     width: 8.33333333%;
   }
@@ -428,7 +428,7 @@ body {
   margin: 16px 32px;
   margin: 1rem 2rem;
 }
-@media only screen and (min-width: 600px) and (max-width: 993px) {
+@media only screen and (min-width: @{mobile + 1}) and (max-width: @{desktop - 1}) {
   .main {
     left: 0rem;
   }
